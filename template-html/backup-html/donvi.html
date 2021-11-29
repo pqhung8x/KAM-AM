@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/customs.css"/>
+        <title>Smart Sales Base </title>
+    </head>
+    <body class="ssb-body">
+        <div class="ssb-all-swapper ">
+            <!-- Breadcrumb, search and header function  -->
+            <div class="right-header">
+                <div class="right-header-breadcrum">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="d-xl-flex align-items-center"><img src="images/home_icon_gray_32.png">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="danhsach-donvi.html">Đơn vị</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi tiết đơn vị</li>
+                        </ol>
+                    </nav>
+                </div>
+               <!--  <div class="d-flex align-items-center flex-xl-grow-1 grid-gap-10">
+                    <div class="right-header-search">
+                        <input type="text" name="search-input" placeholder="Nhập từ khóa tìm kiếm" class="search-input">
+                        <button class="btn btn-blue">Tìm kiếm</button>
+                    </div>
+                    <div class="right-header-function">
+                        <button class="btn btn-blue d-flex align-items-center"><img src="images/add_16_white.png" alt="">Import</button>
+                        <button class="btn btn-blue d-flex align-items-center" data-toggle="modal" data-target="#modal-themdonvi"><img src="images/add_16_white.png" alt="">Thêm mới</button>
+                    </div>
+                </div> -->
+            </div>
+            <!-- right main content -->
+            <div class="right-box-content">
+                <div class="right-box-content-header">
+                    <div class="right-box-content-header-tittle">
+                        <h3>Chi tiết đơn vị</h3>
+                        <p>Các thông tin chi tiết của đơn vị</p>
+                    </div>
+                    <div class="right-box-content-header-function"></div>
+                </div>
+                <div class="graybg full-w right-box-content-body d-flex align-items-stretch grid-gap-20">
+                    <div class="card flex-xl-grow-1">
+                        <div class="card-header">
+                            <h5 class="no-margin">Thông tin cơ bản</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column grid-gap-20 company-info">
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Tên đơn vị<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Địa chỉ<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Số điện thoại<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Email<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Số FAX<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Ngày đăng ký KD<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Mã số thuế<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Đơn vị cấp trên<span class="text-danger">(*)</span></label>
+                                <select class="input-form flex-xl-grow-1">
+                                  <option selected>Chọn đơn vị</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Ghi chú(*)</label>
+                                <textarea class="input-form flex-xl-grow-1">Nhập ghi chú</textarea>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card flex-xl-grow-1">
+                        <div class="card-header">
+                            <h5 class="no-margin">Thông tin người đại diện</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column grid-gap-20 company-info">
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Tên người đại diện<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Ngày sinh<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Chức vụ<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Số CMND/CCCD<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Nơi cấp<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Ngày cấp<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <label for="search-input" class="no-margin">Giới tính</label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="right-box-content-footer d-flex justify-content-end grid-gap-20">
+                    <button class="btn btn-blue-border d-flex align-items-center">Hủy</button>
+                    <button class="btn btn-blue d-flex align-items-center">Lưu thông tin</button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="modal mbf-modal" tabindex="-1" id="modal-themdonvi" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thêm mới đơn vị</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="graybg d-flex align-items-stretch grid-gap-20 pd-20">
+
+                            <div class="card flex-xl-grow-1">
+                                <div class="card-header">
+                                    <h5 class="no-margin">Thông tin cơ bản</h5>
+                                </div>
+                                <div class="card-body d-flex flex-column grid-gap-20 company-info">
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Tên đơn vị<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Địa chỉ<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Số điện thoại<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                     <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Email<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Số FAX<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Ngày đăng ký KD<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Mã số thuế<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Đơn vị cấp trên<span class="text-danger">(*)</span></label>
+                                         <select class="input-form flex-xl-grow-1">
+                                          <option selected>Chọn đơn vị</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Ghi chú(*)</label>
+                                        <textarea class="input-form flex-xl-grow-1">Nhập ghi chú</textarea>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                            <div class="card flex-xl-grow-1">
+                                <div class="card-header">
+                                    <h5 class="no-margin">Thông tin người đại diện</h5>
+                                </div>
+                                <div class="card-body d-flex flex-column grid-gap-20 company-info">
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Tên người đại diện<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                     <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Ngày sinh<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                       <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Giới tính</label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Chức vụ<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Số CMND/CCCD<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Nơi cấp<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Ngày cấp<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                 
+                                </div>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-blue-border" data-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-blue">Lưu thông tin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Optional JavaScript; choose one of the two! -->
+            <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+            <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+            <script src="bootstrap/js/bootstrap.min.js"></script>
+        </body>
+    </html>

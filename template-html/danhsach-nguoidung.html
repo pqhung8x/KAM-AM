@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/customs.css"/>
+        <title>Hệ thống tính lương KAM/AM </title>
+    </head>
+    <body class="ssb-body">
+        <!-- Nội dung phần header -->
+        <div class="header d-flex">
+            <div class="app-logo"><img src="images/login-mbf-logo.png" alt="MobiFone"></div>
+            <div class="header-breadcrum flex-grow-1">
+                <div class="header-breadcrum">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="d-xl-flex align-items-center"><img src="images/home_icon_gray_32.png">Quản lý tính lương KAM/AM</a></li>
+                            <li class="breadcrumb-item">QL Người dùng</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-account d-flex">
+                <div class="account-info d-flex flex-column">
+                    <p class="account-name">Hungpham</p>
+                    <p class="account-r">Admin</p>
+                </div>
+                <div class="account-avata"><img src="images/default-avata-dark-mode.png" alt="User avatar"></div>
+                <div class="account-more-f">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Thông tin tài khoản</button>
+                            <button class="dropdown-item color-red" type="button">Đăng xuất</button>
+                            <button class="dropdown-item" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phần nội dung chính -->
+        <div class="mid-main-content d-flex">
+            <!-- Nội dung Sidemenu -->
+            <div class="side-menu w-250">
+                <ul>
+                    <li><a href="trangchu.html"><img src="images/home.png" alt="" class="side-menu-icon">Trang chủ</a></li>
+                    <li class="menu-divi">Quản lý hệ thống</li>
+                    <li><a href="danhsach-donvi.html"><img src="images/donvi.png" alt="" class="side-menu-icon">QL Đơn vị</a></li>
+                    <li class="active"><a href="danhsach-nguoidung.html"><img src="images/user.png" alt="" class="side-menu-icon">QL Người dùng</a></li>
+                    <li><a href="danhsach-nhomnguoidung.html"><img src="images/user-group.png" alt="" class="side-menu-icon">QL Nhóm người dùng</a></li>
+                    <li class="menu-divi">QL Tính lương</li>
+                    <li><a href="danhsach-chitieu.html"><img src="images/chitieu.png" alt="" class="side-menu-icon">QL Chỉ tiêu</a></li>
+                    <li><a href="danhsach-kpi.html"><img src="images/kpi.png" alt="" class="side-menu-icon">QL KPI</a></li>
+                </ul>
+            </div>
+            <!-- Nội dung chính bên phải -->
+            <div class="ssb-all-swapper ">
+                <!-- right main content -->
+                <div class="right-box-content">
+                    <div class="right-box-content-header no-border">
+                        <div class="right-box-content-header-tittle">
+                            <h3>QL Người dùng</h3>
+                            <p>Quản lý người dùng hệ thống</p>
+                        </div>
+                        <div class="right-box-content-header-function">
+                            <div class="right-header-search">
+                                <div class="search-icon"><img src="images/search-header.png" alt=""/></div>
+                                <input type="text" name="search-input" placeholder="Nhập từ khóa tìm kiếm" class="search-input">
+                                <button class="btn btn-blue">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-list d-flex space-between">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Danh sách người dùng</a>
+                            </li>
+                        </ul>
+                        <div class="fillter-contents d-flex grid-gap-10">
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <select class="input-form flex-xl-grow-1">
+                                    <option selected>Chọn đơn vị</option>
+                                    <option value="1">Tổng công ty MobiFone</option>
+                                    <option value="2">Công ty Khu vực 1</option>
+                                    <option value="3">Công ty Khu vực 2</option>
+                                </select>
+                            </div>
+                            <div class="d-flex grid-gap-10 align-items-center">
+                                <select class="input-form flex-xl-grow-1">
+                                    <option selected>Tất cả người dùng</option>
+                                    <option value="1">KAM</option>
+                                    <option value="2">AM</option>
+                                    <option value="3">Admin CT khu vực</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graybg full-w right-box-content-body">
+                        <div class="tab-content" id="myTabContent">
+                            <!-- tab thông tin nhóm quyền -->
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">STT</th>
+                                            <th scope="col">Tên người dùng</th>
+                                            <th scope="col">Số điện thoại</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Phân quyền</th>
+                                            <th scope="col">Tác vụ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td><a href="chitiet-nguoidung.html">Vương Văn Hưng</a></td>
+                                            <td>0879252155</td>
+                                            <td>mobifone@mobifone.vn</td>
+                                            <td>Admin</td>
+                                            <td class="d-flex grid-gap-10 table-function-group"><button class="no-border"><img src="images/edit_24.png" data-toggle="modal" data-target="#modal-suathongtinnguoidung" alt=""></button><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td><a href="chitiet-nguoidung.html">Vương Sỹ Tùng</a></td>
+                                            <td>0879252155</td>
+                                            <td>mobifone@mobifone.vn</td>
+                                            <td>Admin</td>
+                                            <td class="d-flex grid-gap-10 table-function-group"><button class="no-border"><img src="images/edit_24.png" data-toggle="modal" data-target="#modal-suathongtinnguoidung" alt=""></button><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td><a href="chitiet-nguoidung.html">Lưu Văn Tấn</a></td>
+                                            <td>0879252155</td>
+                                            <td>mobifone@mobifone.vn</td>
+                                            <td>Admin</td>
+                                            <td class="d-flex grid-gap-10 table-function-group"><button class="no-border"><img src="images/edit_24.png" data-toggle="modal" data-target="#modal-suathongtinnguoidung" alt=""></button><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                        </tr>
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                                <!-- phân trang -->
+                                <div class="pd-20 full-w">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!-- popup thêm mới người dùng -->
+        <div class="modal mbf-modal" tabindex="-1" id="modal-suathongtinnguoidung" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sứa thông tin người dùng</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="graybg d-flex align-items-stretch grid-gap-20 pd-20">
+                            <div class="card flex-grow-1">
+                                <div class="card-header">
+                                    <h5 class="no-margin">Thông tin cá nhân</h5>
+                                </div>
+                                <div class="card-body d-flex flex-column grid-gap-20 company-info">
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Họ và tên<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Tên đăng nhập<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Ngày sinh<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Giới tính<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Địa chỉ<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Số điện thoại<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Số CMND/CCCD<span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Đơn vị trực thuộc<span class="text-danger">(*)</span></label>
+                                        <select class="input-form flex-xl-grow-1">
+                                            <option selected>Chọn đơn vị</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Chọn quốc gia</label>
+                                        <select class="input-form flex-xl-grow-1">
+                                            <option selected>Quốc gia</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex col-xl-4 no-padding flex-column grid-gap-20">
+                                <div class="card flex-xl-grow-1">
+                                    <div class="card-header">
+                                        <h5 class="no-margin">Nhóm quyền</h5>
+                                    </div>
+                                    <div class="card-body d-flex flex-column grid-gap-20 h-max-500">
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check1">
+                                            <label class="custom-control-label flex-xl-grow-1" for="popup-check1">Nhóm Admin</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check2">
+                                            <label class="custom-control-label flex-xl-grow-1" for="popup-check2">Nhóm Marketing</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check3">
+                                            <label class="custom-control-label flex-xl-grow-1" for="popup-check3">Nhóm Sales</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check4">
+                                            <label class="custom-control-label flex-xl-grow-1" for="popup-check4">Nhóm truyền thông</label>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="card flex-xl-grow-1">
+                                    <div class="card-header">
+                                        <h5 class="no-margin">Phân quyền ứng dụng</h5>
+                                    </div>
+                                    <div class="card-body d-flex flex-column grid-gap-20 h-max-500">
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check5">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="popup-check5"><img src="images/Ql-noidung.png" alt=""/>Web to Lead Form</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check6">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="popup-check6"><img src="images/Ql-email-marketing.png" alt=""/>Marketing tự động</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check7">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="popup-check7"><img src="images/Ql-chiendich.png" alt=""/>Marketing đa kênh</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check8">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="popup-check8"><img src="images/Ql-khachhang.png" alt=""/>Quản lý nhóm khách hàng</label>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-blue-border" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-blue">Lưu thông tin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    </body>
+</html>

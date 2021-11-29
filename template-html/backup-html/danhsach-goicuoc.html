@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/customs.css"/>
+        <title>Smart Sales Base </title>
+    </head>
+    <body class="ssb-body">
+        <div class="ssb-all-swapper ">
+            <!-- Breadcrumb, search and header function  -->
+            <div class="right-header">
+                <div class="right-header-breadcrum">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="d-xl-flex align-items-center"><img src="images/home_icon_gray_32.png">Trang chủ</a></li>
+                            <li class="breadcrumb-item">QL Gói cước</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="d-flex align-items-center flex-xl-grow-1 grid-gap-10">
+                    <div class="right-header-search">
+                        <input type="text" name="search-input" placeholder="Nhập từ khóa tìm kiếm" class="search-input">
+                        <button class="btn btn-blue">Tìm kiếm</button>
+                    </div>
+                    <!-- <div class="right-header-function">
+                        <button class="btn btn-blue d-flex align-items-center" ><img src="images/add_16_white.png" alt="">Import CRV</button>
+                        <button class="btn btn-blue d-flex align-items-center" data-toggle="modal" data-target="#modal-themnhomnguoidung"><img src="images/add_16_white.png" alt="">Thêm mới</button>
+                    </div> -->
+                </div>
+            </div>
+            <!-- right main content -->
+            <div class="right-box-content">
+                <div class="right-box-content-header no-border">
+                    <div class="right-box-content-header-tittle">
+                        <h3>Quản lý gói cước</h3>
+                        <p>Thông tin các gói cước bạn đã mua</p>
+                    </div>
+                    <div class="right-box-content-header-function"></div>
+                </div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Danh sách gói cước</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <!-- tab thông tin nhóm quyền -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Tên gói cước</th>
+                                    <th scope="col">Giá(VND)</th>
+                                    <th scope="col">Trạng thái</th>
+                                    <th scope="col">Ngày mua</th>
+                                    <th scope="col">Ngày hết hạn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>
+                                        <a href="goicuoc.html" class="d-flex align-items-center">
+                                            <div><img src="images/Ql-email-marketing-lag.png" alt=""></div>
+                                            <div class="d-flex flex-column">
+                                                <h5>Email Marketing Pro</h5>
+                                                <p class="w-max-250 color-darkblue">Ứng dụng Email Marketing phục vụ công việc gửi Email Marketing tới khách hàng hoặc tập khách hàng</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </td>
+                                    <td>5000.000</td>
+                                    <td>Đang sử dụng</td>
+                                    <td>29/02/2021</td>
+                                    <td>29/09/2021</td>
+                                </tr>
+
+                                
+                            </tbody>
+                        </table>
+                        <!-- phân trang -->
+                        <div class="pd-20 full-w">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+
+
+    <!-- popup thêm người dùng ung dung -->
+    <div class="modal mbf-modal" tabindex="-1" id="modal-themnguoidung" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header no-border d-flex align-items-center wrap-720 grid-gap-20">
+                    <div>
+                        <h5 class="modal-title">Cấp quyền sử dụng cho người dùng</h5>
+                        <p>Chọn những thành viên mà bạn muốn cấp quyền sử dụng ứng dụng này</p>
+                    </div>
+                    <div class="d-flex grid-gap-10  col-xl-4">
+                        <input type="text" name="search-user" class="input-form full-w" placeholder="Tìm kiếm người dùng" />
+                        <button class="btn btn-blue">Tìm</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="modal-body">
+                    <div class="full-w user-table-tittle"><h6>Danh sách người dùng</h6></div>
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" class="width-24">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                    </div>
+                                </th>
+                                <th scope="col">Họ tên</th>
+                                <th scope="col">Tên đang nhập</th>
+                                <th scope="col">Số điện thoại</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Đơn vị</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" class="width-24">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                    </div>
+                                </td>
+                                <td>Đỗ Minh Tuấn</td>
+                                <td>tuan.dominh</td>
+                                <td>0987825211</td>
+                                <td>tuan.dominh@mobifone.vn</td>
+                                <td scope="col">Phòng PMNB</td>
+                                
+                            </tr>
+                            <tr>
+                                <td scope="row" class="width-24">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                    </div>
+                                </td>
+                                <td>Đỗ Minh Tuấn</td>
+                                <td>tuan.dominh</td>
+                                <td>0987825211</td>
+                                <td>tuan.dominh@mobifone.vn</td>
+                                <td scope="col">Phòng PMNB</td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer d-flex grid-gap-20 justify-content-between">
+                    <!-- phân trang -->
+                    <div class="pd-20">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-blue-border" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-blue">Lưu thông tin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- popup thêm nhom nguoi dung ung dung -->
+    <div class="modal mbf-modal" tabindex="-1" id="modal-themnhomnguoidung" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header no-border d-flex align-items-center wrap-720 grid-gap-20">
+                    <div>
+                        <h5 class="modal-title">Cấp quyền sử dụng cho nhóm</h5>
+                        <p>Chọn những nhóm mà bạn muốn cấp quyền sử dụng ứng dụng này</p>
+                    </div>
+                    <div class="d-flex grid-gap-10  col-xl-4">
+                        <input type="text" name="search-user" class="input-form full-w" placeholder="Tìm kiếm người dùng" />
+                        <button class="btn btn-blue">Tìm</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="modal-body">
+                    <div class="full-w user-table-tittle"><h6>Danh sách nhóm quyền</h6></div>
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" class="width-24">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                    </div>
+                                </th>
+                                <th scope="col">Tên nhóm</th>
+                                <th scope="col">Mô tả</th>
+                                <th scope="col">Số thành viên</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" class="width-24">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                    </div>
+                                </td>
+                                <td>Admin</td>
+                                <td>Nhóm quản trị viên cấp cao nhất</td>
+                                <td>125</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="width-24">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                    </div>
+                                </td>
+                                <td>Marketing</td>
+                                <td>Nhóm nhân viên phụ trách Marketing</td>
+                                <td>500</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer d-flex grid-gap-20 justify-content-between">
+                    <!-- phân trang -->
+                    <div class="pd-20">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-blue-border" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-blue">Lưu thông tin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/customs.css"/>
+        <title>Smart Sales Base </title>
+    </head>
+    <body class="ssb-body">
+        <div class="ssb-all-swapper ">
+            <!-- Breadcrumb, search and header function  -->
+            <div class="right-header">
+                <div class="right-header-breadcrum">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="d-xl-flex align-items-center"><img src="images/home_icon_gray_32.png">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="danhsach-nhomnguoidung.html">Nhóm người dùng</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi tiết nhóm</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="d-flex align-items-center flex-xl-grow-1 grid-gap-10">
+                    <div class="right-header-search">
+                        <input type="text" name="search-input" placeholder="Nhập từ khóa tìm kiếm" class="search-input">
+                        <button class="btn btn-blue">Tìm kiếm</button>
+                    </div>
+                    <div class="right-header-function">
+                        <button class="btn btn-blue d-flex align-items-center" data-toggle="modal" data-target="#modal-themthanhvien"><img src="images/add_16_white.png" alt="">Thêm Thành Viên</button>
+                        <button class="btn btn-blue d-flex align-items-center" data-toggle="modal" data-target="#modal-themnhomnguoidung"><img src="images/add_16_white.png" alt="">Thêm mới</button>
+                    </div>
+                </div>
+            </div>
+            <!-- right main content -->
+            <div class="right-box-content">
+                <div class="right-box-content-header no-border">
+                    <div class="right-box-content-header-tittle">
+                        <h3>Chi tiết nhóm người dùng</h3>
+                        <p>Các thông tin chi tiết của nhóm người dùng</p>
+                    </div>
+                    <div class="right-box-content-header-function"></div>
+                </div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Thông tin nhóm</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Thành viên nhóm</a>
+                    </li>
+                    
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <!-- tab thông tin nhóm quyền -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="graybg full-w right-box-content-body d-flex align-items-stretch grid-gap-20">
+                            <div class="card flex-xl-grow-1">
+                                <div class="card-header">
+                                    <h5 class="no-margin">Thông tin cơ bản</h5>
+                                </div>
+                                <div class="card-body d-flex flex-column grid-gap-20 company-info">
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Tên nhóm <span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-start">
+                                        <label for="search-input" class="no-margin">Mô tả nhóm<span class="text-danger">(*)</span></label>
+                                        <textarea class="input-form flex-xl-grow-1 h-min-200">Nhập ghi chú</textarea>
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-start">
+                                        <label for="search-input" class="no-margin">Trạng thái</label>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1">Kích hoạt</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex col-xl-4 no-padding flex-column grid-gap-20">
+                                <div class="card flex-xl-grow-1">
+                                    <div class="card-header">
+                                        <h5 class="no-margin">Phân quyền ứng dụng</h5>
+                                    </div>
+                                    <div class="card-body d-flex flex-column grid-gap-20 h-max-500">
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check5">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="check5"><img class="img-32" src="images/Ql-noidung.png" alt=""/>Web to Lead Form</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check6">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="check6"><img class="img-32" src="images/Ql-email-marketing.png" alt=""/>Marketing tự động</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check7">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="check7"><img class="img-32" src="images/Ql-chiendich.png" alt=""/>Marketing đa kênh</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check8">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="check8"><img class="img-32" src="images/Ql-khachhang.png" alt=""/>Quản lý nhóm khách hàng</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="right-box-content-footer d-flex justify-content-end grid-gap-20">
+                            <button class="btn btn-blue-border d-flex align-items-center">Hủy</button>
+                            <button class="btn btn-blue d-flex align-items-center">Lưu thông tin</button>
+                        </div>
+                        
+                    </div>
+                    <!-- tab danh sách thành viên nhóm quyền -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Họ tên</th>
+                                    <th scope="col">Tên đăng nhập</th>
+                                    <th scope="col">Số điện thoại</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr><tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr><tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr><tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr><tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr><tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr><tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr><tr>
+                                    <td scope="row">1</td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    <td><button class="no-border"><img src="images/remove-item.png" alt=""></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- phân trang -->
+                        <div class="pd-20 full-w">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        <!-- popup thêm mới nhóm người dùng -->
+        <div class="modal mbf-modal" tabindex="-1" id="modal-themnhomnguoidung" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thêm mới nhóm quyền</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="graybg d-flex align-items-stretch grid-gap-20 pd-20">
+                            <div class="card flex-grow-1">
+                                <div class="card-header">
+                                    <h5 class="no-margin">Thông tin nhóm</h5>
+                                </div>
+                                <div class="card-body d-flex flex-column grid-gap-20 company-info">
+                                    <div class="d-flex grid-gap-10 align-items-center">
+                                        <label for="search-input" class="no-margin">Tên nhóm <span class="text-danger">(*)</span></label><input type="text" name="input" placeholder="" class="input-form flex-xl-grow-1">
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-start">
+                                        <label for="search-input" class="no-margin">Mô tả nhóm<span class="text-danger">(*)</span></label>
+                                        <textarea class="input-form flex-xl-grow-1 h-min-200">Nhập ghi chú</textarea>
+                                    </div>
+                                    <div class="d-flex grid-gap-10 align-items-start">
+                                        <label for="search-input" class="no-margin">Trạng thái</label>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                            <label class="custom-control-label" for="customSwitch2">Kích hoạt</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex col-xl-4 no-padding flex-column grid-gap-20">
+                                <div class="card flex-xl-grow-1">
+                                    <div class="card-header">
+                                        <h5 class="no-margin">Phân quyền ứng dụng</h5>
+                                    </div>
+                                    <div class="card-body d-flex flex-column grid-gap-20 h-max-500">
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check5">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="popup-check5"><img src="images/Ql-noidung.png" alt=""/>Web to Lead Form</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check6">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="popup-check6"><img src="images/Ql-email-marketing.png" alt=""/>Marketing tự động</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check7">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="popup-check7"><img src="images/Ql-chiendich.png" alt=""/>Marketing đa kênh</label>
+                                        </div>
+                                        <div class="d-flex grid-gap-10 align-items-center custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="popup-check8">
+                                            
+                                            <label class="custom-control-label flex-xl-grow-1 d-flex align-items-center" for="popup-check8"><img src="images/Ql-khachhang.png" alt=""/>Quản lý nhóm khách hàng</label>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-blue-border" data-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-blue">Lưu thông tin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup thêm người dùng vào nhóm -->
+        <div class="modal mbf-modal" tabindex="-1" id="modal-themthanhvien" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header no-border d-flex align-items-center wrap-720 grid-gap-20">
+                        <div>
+                            <h5 class="modal-title">Thêm mới thành viên nhóm</h5>
+                            <p>Chọn những thành viên mà bạn muốn từ danh sách thành viên hệ thống để thêm vào nhóm</p>
+                        </div>
+                        <div class="d-flex grid-gap-10  col-xl-4">
+                            <input type="text" name="search-user" class="input-form full-w" placeholder="Tìm kiếm người dùng" />
+                            <button class="btn btn-blue">Tìm</button>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="modal-body">
+                        <div class="full-w user-table-tittle"><h6>Danh sách người dùng</h6></div>
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">Họ tên</th>
+                                    <th scope="col">Tên đang nhập</th>
+                                    <th scope="col">Số điện thoại</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    
+                                </tr>
+                                 <tr>
+                                    <td scope="row" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    
+                                </tr> <tr>
+                                    <td scope="row" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    
+                                </tr> <tr>
+                                    <td scope="row" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    
+                                </tr> <tr>
+                                    <td scope="row" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    
+                                </tr> <tr>
+                                    <td scope="row" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    
+                                </tr> <tr>
+                                    <td scope="row" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    
+                                </tr> <tr>
+                                    <td scope="row" class="width-24">
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="popup-user">
+                                        <label class="custom-control-label" for="popup-user"></label>
+                                        </div>
+                                    </td>
+                                    <td>Đỗ Minh Tuấn</td>
+                                    <td>tuan.dominh</td>
+                                    <td>0987825211</td>
+                                    <td>tuan.dominh@mobifone.vn</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="modal-footer d-flex grid-gap-20 justify-content-between">
+                        <!-- phân trang -->
+                        <div class="pd-20">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                        <button type="button" class="btn btn-blue-border" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-blue">Lưu thông tin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
