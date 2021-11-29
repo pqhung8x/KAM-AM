@@ -36,6 +36,7 @@
 .font-32 { font-size: 32px; }
 .color-red{color: #E74C3C;}
 .space-between{justify-content: space-between;}
+.width-full{width: 100%;}
 
 /*css for smart sales base*/
 
